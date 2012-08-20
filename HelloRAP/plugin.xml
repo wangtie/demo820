@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.rap.ui.entrypoint">
+      <entrypoint
+            class="hellorap.Application"
+            parameter="hello"
+            id="hellorap.Application">
+      </entrypoint>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RAP Perspective"
+            class="hellorap.Perspective"
+            id="HelloRAP.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="hellorap.ViewPart1"
+            id="HelloRAP.view1"
+            name="name"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
